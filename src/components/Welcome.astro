@@ -3,6 +3,42 @@ import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 ---
 
-<div id="container">
-	<p class="font-2xl p-10">SOFIA ES GAY</p>
+<div id="container" class="w-screen h-screen flex">
+	<div class="flex flex-col justify-end w-screen">
+
+		<p class="text-9xl text-white font-extralight p-10">SOFTWARE DEVELOPMENT</p>
+		<p class="text-2xl text-white font-bold px-10">Daniel Toro</p>
+	</div>
+	<div id="inner-curve" class="flex items-center justify-center">
+		<p>Imagen de programacion</p>
+	</div>
 </div>
+
+
+<style>
+	#container {
+		background: rgb(2,0,36);
+		background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 16%, rgba(0,212,255,1) 100%);
+	}
+	
+	#inner-curve {
+		--r: 20px;  /* control the rounded part */
+		--s: 40px;  /* control the size of the cut */
+		--a: 20deg; /* control the depth of the curvature */
+		--p: 50%;   /* control the position */
+
+		height: 200px;
+		aspect-ratio: 3/2;
+		background: #ffffff;
+		border-radius: var(--r);
+		--_m:var(--r),#000 calc(100% - 1px),#0000;
+		--_d:(var(--s) + var(--r))*cos(var(--a));
+		mask:
+			radial-gradient(var(--r) at calc(var(--p) + var(--_d)) var(--_m)),
+			radial-gradient(var(--r) at calc(var(--p) - var(--_d)) var(--_m)),
+			radial-gradient(var(--s) at var(--p) calc(-1*sin(var(--a))*var(--s)),
+			#0000 100%,#000 calc(100% + 1px)) 0 calc(var(--r)*(1 - sin(var(--a)))) no-repeat,
+			linear-gradient(90deg,#000 calc(var(--p) - var(--_d)),#0000 0 calc(var(--p) + var(--_d)),#000 0);
+		}
+	
+</style>
