@@ -1,24 +1,21 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
+// Se puede combinar tailwind y css sin problema. se usa el id porque en el class iria el tailwind.
 ---
 
 <div id="container" class="w-screen h-screen flex">
 	<div class="flex flex-col justify-end w-screen">
 
 		<p class="text-9xl text-white font-extralight p-10">SOFTWARE DEVELOPMENT</p>
-		<p class="text-2xl text-white font-bold px-10">Daniel Toro</p>
+	
 	</div>
-	<div id="inner-curve" class="flex items-center justify-center">
-		<p>Imagen de programacion</p>
-	</div>
+	
 </div>
 
 
 <style>
 	#container {
-		background: rgb(2,0,36);
-		background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 16%, rgba(0,212,255,1) 100%);
+		background: rgb(27,12,199);
+background: radial-gradient(circle, rgba(27,12,199,1) 0%, rgba(0,0,0,1) 100%);
 	}
 	
 	#inner-curve {
