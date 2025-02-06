@@ -13,9 +13,9 @@ const Navbar = () => {
       }}
       
       class="w-full flex gap-10 justify-between p-10">
-		<p class="font-bold text-xl"> Services </p> 
-		<p class="font-bold text-xl"> About Us</p>
-		<p class="font-bold text-xl"> Contact Us</p>
+		<a href='#services' class="font-bold text-xl"> Services </a> 
+		<a href='#about' class="font-bold text-xl"> About Us</a>
+		<a href='#contact' class="font-bold text-xl"> Contact Us</a>
 	</motion.div>
     </div>
   )
