@@ -1,41 +1,21 @@
 ---
+import Ejemplo from "./animaciones/Ejemplo";
+import Navbar from "./animaciones/Navbar";
+import Verbum from "./animaciones/Verbum";
+
 // Se puede combinar tailwind y css sin problema. se usa el id porque en el class iria el tailwind.
 ---
 
-<div id="container" class="w-screen h-screen flex">
-	<div class="flex flex-col justify-end w-screen">
+<div id="container" class="overflow-hidden w-screen min-h-screen flex flex-col justify-between	 bg-[#d7fe00]">
 
-		<p class="text-9xl text-white font-extralight p-10">SOFTWARE DEVELOPMENT</p>
+	<Navbar client:load/>
 	
+	
+	<div class="flex flex-col justify-end w-screen p-10 items-end">
+		
+		<Verbum client:load/>
+		
 	</div>
+
 	
 </div>
-
-
-<style>
-	#container {
-		background: rgb(27,12,199);
-background: radial-gradient(circle, rgba(27,12,199,1) 0%, rgba(0,0,0,1) 100%);
-	}
-	
-	#inner-curve {
-		--r: 20px;  /* control the rounded part */
-		--s: 40px;  /* control the size of the cut */
-		--a: 20deg; /* control the depth of the curvature */
-		--p: 50%;   /* control the position */
-
-		height: 200px;
-		aspect-ratio: 3/2;
-		background: #ffffff;
-		border-radius: var(--r);
-		--_m:var(--r),#000 calc(100% - 1px),#0000;
-		--_d:(var(--s) + var(--r))*cos(var(--a));
-		mask:
-			radial-gradient(var(--r) at calc(var(--p) + var(--_d)) var(--_m)),
-			radial-gradient(var(--r) at calc(var(--p) - var(--_d)) var(--_m)),
-			radial-gradient(var(--s) at var(--p) calc(-1*sin(var(--a))*var(--s)),
-			#0000 100%,#000 calc(100% + 1px)) 0 calc(var(--r)*(1 - sin(var(--a)))) no-repeat,
-			linear-gradient(90deg,#000 calc(var(--p) - var(--_d)),#0000 0 calc(var(--p) + var(--_d)),#000 0);
-		}
-	
-</style>
