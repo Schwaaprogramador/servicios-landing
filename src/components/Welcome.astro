@@ -1,21 +1,24 @@
 ---
-import Ejemplo from "./animaciones/Ejemplo";
+
 import Navbar from "./animaciones/Navbar";
 import Verbum from "./animaciones/Verbum";
 
 // Se puede combinar tailwind y css sin problema. se usa el id porque en el class iria el tailwind.
 ---
 
-<div id="container" class="overflow-hidden w-screen min-h-screen flex flex-col justify-between	 bg-[#d7fe00]">
+<div id="container" class="overflow-hidden w-screen min-h-screen flex flex-col items-center">
 
-	<Navbar client:load/>
+	<Navbar client:load />
 	
 	
-	<div class="flex flex-col justify-end w-screen p-10 items-end">
+	<div class="flex flex-col">
 		
 		<Verbum client:load/>
 		
 	</div>
 
+	<h2 class="text-5xl mt-12 tracking-tighter font-normal text-black">
+        Design &amp; development
+      </h2>
 	
 </div>

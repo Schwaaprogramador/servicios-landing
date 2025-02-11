@@ -19,23 +19,23 @@ const Servicios = () => {
 
                 <motion.div
                     whileHover={{ scale: 1.1 }}
-                    className="w-[400px] p-10 bg-[#d7fe00] flex-col gap-10 flex justify-center items-center rounded-4xl">
-                    <ImEarth className="text-black text-9xl" />
-                    <p className="font-extrabold text-2xl">Llega a todo el mundo</p>
+                    className="w-[400px] p-10 bg-[url(/si.jpg)] bg-cover flex-col gap-10 flex justify-center items-center rounded-4xl">
+                    <ImEarth className="text-white text-9xl" />
+                    <p className="font-extrabold text-2xl text-white">Llega a todo el mundo</p>
                 </motion.div>
 
                 <motion.div
                     whileHover={{ scale: 1.1 }}
-                     className="w-[400px] p-10 bg-[#d7fe00] flex-col gap-10 flex justify-center items-center rounded-4xl">
-                    <ImStatsDots className="text-black text-9xl" />
-                    <p className="font-extrabold text-2xl">Optimiza los servicios</p>
+                     className="w-[400px] p-10 bg-[url(/si.jpg)] bg-cover flex-col gap-10 flex justify-center items-center rounded-4xl">
+                    <ImStatsDots className="text-white text-9xl" />
+                    <p className="font-extrabold text-2xl text-white">Optimiza los servicios</p>
                 </motion.div>
 
                 <motion.div
                     whileHover={{ scale: 1.1 }} 
-                    className="w-[400px] p-10 bg-[#d7fe00] flex-col gap-10 flex justify-center items-center rounded-4xl">
-                    <ImPodcast className="text-black text-9xl" />
-                    <p className="font-extrabold text-2xl">Posiciona tu Marca</p>
+                    className="w-[400px] p-10 bg-[url(/si.jpg)] bg-cover flex-col gap-10 flex justify-center items-center rounded-4xl">
+                    <ImPodcast className="text-white text-9xl" />
+                    <p className="font-extrabold text-2xl text-white">Posiciona tu Marca</p>
                 </motion.div>
 
             </motion.div>
@@ -48,23 +48,23 @@ const Servicios = () => {
 
             <motion.div
                 whileHover={{ scale: 1.1 }}
-                className="w-[400px] p-10 bg-[#d7fe00] flex-col gap-10 flex justify-center items-center rounded-4xl">
-                <ImCoinDollar className="text-black text-9xl"  />
-                <p className="font-extrabold text-2xl">Aumenta tus ventas</p>
+                className="w-[400px] p-10 bg-[url(/si.jpg)] bg-cover flex-col gap-10 flex justify-center items-center rounded-4xl">
+                <ImCoinDollar className="text-white text-9xl"  />
+                <p className="font-extrabold text-2xl text-white">Aumenta tus ventas</p>
             </motion.div >
 
             <motion.div 
                 whileHover={{ scale: 1.1 }}
-                className="w-[400px] p-10 bg-[#d7fe00] flex-col gap-10 flex justify-center items-center rounded-4xl">
-                <ImBriefcase className="text-black text-9xl" />
-                <p className="font-extrabold text-2xl">Hacer crecer tu empresa</p>  
+                className="w-[400px] p-10 bg-[url(/si.jpg)] bg-cover flex-col gap-10 flex justify-center items-center rounded-4xl">
+                <ImBriefcase className="text-white text-9xl" />
+                <p className="font-extrabold text-2xl text-white">Hacer crecer tu empresa</p>  
             </motion.div>
 
             <motion.div
                 whileHover={{ scale: 1.1 }}
-                className="w-[400px] p-10 bg-[#d7fe00] flex-col gap-10 flex justify-center items-center rounded-4xl">
-                <ImUsers className="text-black text-9xl" />
-                <p className="font-extrabold text-2xl">Conecta con tu Publico</p>
+                className="w-[400px] p-10 bg-[url(/si.jpg)] bg-cover flex-col gap-10 flex justify-center items-center rounded-4xl">
+                <ImUsers className="text-white text-9xl " />
+                <p className="font-extrabold text-2xl text-white">Conecta con tu Publico</p>
             </motion.div>
 
         </motion.div>
